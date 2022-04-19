@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  
+  app:
+    build: ./app
+    command: ["./runserver.sh"]
+    # command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    container_name: app-bolao-app
+    ports:
+      - 8000:8000
+    working_dir: /app-bolao
+    volumes:
+      - ./app:/app-bolao
+    env_file:
+      - ./app/.env.app
+    depends_on:
+      - mysql
+
+  mysql:
+    build: ./data/
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    container_name: app-bolao-mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - data-bolao:/var/lib/mysql
+    env_file:
+      - ./data/.env.data
+    # restart: always
+
+volumes:
+  data-bolao:

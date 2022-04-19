@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}ERRO INTERNO INESPERADO | {% endblock titulo %}
+
+{% block conteudo %}
+    <!-- cabecalho -->
+    <header class="masthead">
+        <div class="container">
+            <!-- Masthead Avatar Image-->
+            {% comment %} <img class="masthead-avatar mb-5" src="{% static '' %}" alt="..." /> {% endcomment %}
+            <div class="masthead-heading text-uppercase">500</div>
+            <div class="masthead-subheading">Erro interno inesperado</div>
+            <div class="masthead-subheading">Desculpas ocorreu um erro inesperado</div>
+            <div class="masthead-subheading">Nossa equipe já foi notificada do problema.</div>
+            <div class="masthead-subheading">Caso necessário entre em contato com suporte@bolaodasorte.com.br</div>
+            <div class="masthead-subheading">Retorne para a sua <a href="{% url 'dashboard' %}"><b>Área de Apostas</b></a>.</div>
+        </div>
+    </header>
+
+{% endblock conteudo %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}PÁGINA NÃO ENCONTRADA | {% endblock titulo %}
+
+{% block conteudo %}
+    <!-- cabecalho -->
+    <header class="masthead">
+        <div class="container">
+            <!-- Masthead Avatar Image-->
+            {% comment %} <img class="masthead-avatar mb-5" src="{% static '' %}" alt="..." /> {% endcomment %}
+            <div class="masthead-heading text-uppercase">404</div>
+            <div class="masthead-subheading">Página não encontrada</div>
+            <div class="masthead-subheading">O endereço que você solicitou não existe</div>
+            <div class="masthead-subheading">Retorne para a sua <a href="{% url 'dashboard' %}"><b>Área de Apostas</b></a>.</div>
+        </div>
+    </header>
+
+{% endblock conteudo %}

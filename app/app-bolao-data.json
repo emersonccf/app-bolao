@@ -1,0 +1,97 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$rJSVfKfNfCty$wBGStlArNauh06CUOBKLM6Ay/kBOkRULt1FhCjzui8Y=",
+    "last_login": "2022-04-14T20:06:08.783Z",
+    "is_superuser": true,
+    "username": "emerson",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-04-14T19:29:38.419Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$BbRAsdNFp4GC$8491vrwN9p+fC0QiYhP+ygJF3xc+gU6gS4VIuH6ac8M=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "pedro",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-04-14T19:33:48.460Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "bolao_app.apostador",
+  "pk": 1,
+  "fields": {
+    "credito": "10.00",
+    "premiacao_ganha": "0.00",
+    "qtd_vitorias": 0
+  }
+},
+{
+  "model": "bolao_app.apostador",
+  "pk": 2,
+  "fields": {
+    "credito": "10.00",
+    "premiacao_ganha": "0.00",
+    "qtd_vitorias": 0
+  }
+},
+{
+  "model": "bolao_app.selecao",
+  "pk": 1,
+  "fields": {
+    "nome": "Bahia",
+    "qtd_titulos": 2
+  }
+},
+{
+  "model": "bolao_app.selecao",
+  "pk": 2,
+  "fields": {
+    "nome": "Vitória",
+    "qtd_titulos": 0
+  }
+},
+{
+  "model": "bolao_app.partida",
+  "pk": 1,
+  "fields": {
+    "selecao_desafiante": 1,
+    "selecao_visitante": 2,
+    "gols_desafiante": null,
+    "gols_visitante": null,
+    "estadio": "Arena Fonte Nova",
+    "data_hora_inicio": "2022-04-19T22:00:00Z",
+    "data_hora_fim": "2022-04-20T00:00:00Z",
+    "finalizada": false
+  }
+},
+{
+  "model": "bolao_app.bolao",
+  "pk": 1,
+  "fields": {
+    "nome": "Clássico do Nordeste: BA-VI",
+    "partida": 1,
+    "premiacao": 0.0,
+    "valor_disputado": 0.0,
+    "esta_ativo": true
+  }
+}
+]

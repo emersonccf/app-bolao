@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}PROIBIDO | {% endblock titulo %}
+
+{% block conteudo %}
+    <!-- cabecalho -->
+    <header class="masthead">
+        <div class="container">
+            <!-- Masthead Avatar Image-->
+            {% comment %} <img class="masthead-avatar mb-5" src="{% static '' %}" alt="..." /> {% endcomment %}
+            <div class="masthead-heading text-uppercase">403</div>
+            <div class="masthead-subheading">PROIBIDO</div>
+            <div class="masthead-subheading">Você não tem permissão para acessar este endereço.</div>
+            <div class="masthead-subheading">Retorne para a sua <a href="{% url 'dashboard' %}"><b>Área de Apostas</b></a>.</div>
+        </div>
+    </header>
+
+{% endblock conteudo %}

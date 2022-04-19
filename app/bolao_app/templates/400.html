@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}REQUISIÇÃO IMPRÓPRIA | {% endblock titulo %}
+
+{% block conteudo %}
+    <!-- cabecalho -->
+    <header class="masthead">
+        <div class="container">
+            <!-- Masthead Avatar Image-->
+            {% comment %} <img class="masthead-avatar mb-5" src="{% static '' %}" alt="..." /> {% endcomment %}
+            <div class="masthead-heading text-uppercase">400</div>
+            <div class="masthead-subheading">Requisição imprópria</div>
+            <div class="masthead-subheading">A requisição enviada não pode ser atendida.</div>
+            <div class="masthead-subheading">Retorne para a sua <a href="{% url 'dashboard' %}"><b>Área de Apostas</b></a>.</div>
+        </div>
+    </header>
+
+{% endblock conteudo %}
